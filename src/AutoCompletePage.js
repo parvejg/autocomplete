@@ -7,7 +7,6 @@ export const Autocomplete = () => {
   const filteredArray = countries?.filter((item) =>
     item.toLowerCase().includes(inputValue.toLowerCase())
   );
-  console.log(clickedCountry);
   return (
     <div className="main-container">
       <h1>Autocomplete</h1>
@@ -35,7 +34,6 @@ export const Autocomplete = () => {
                 className="countryName-wrapper"
                 onClick={(e) => {
                   setClickedCountry(e.target.value);
-                  console.log(e.target.value);
                 }}
                 value={countryName}
               >
